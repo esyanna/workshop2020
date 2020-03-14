@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/utama', 'UtamaController@index')->name('utama');
+Route::get('/karyawan', 'UtamaController@landing')->name('karyawan');
